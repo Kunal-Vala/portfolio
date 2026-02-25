@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunal Vala — Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Kunal Vala — Full Stack JavaScript Developer, Computer Engineering student, building modern web applications." />
+  <meta name="author" content="Kunal Vala" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kunal Vala — Full Stack Developer" />
+  <meta property="og:description" content="Full Stack JavaScript Developer & Computer Engineering Student" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===================== CURSOR GLOW ===================== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-bracket">{</span>
+        <span class="nav__logo-text">KV</span>
+        <span class="nav__logo-bracket">}</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__links">
+      <li><a href="#about" class="mobile-menu__link">About</a></li>
+      <li><a href="#skills" class="mobile-menu__link">Skills</a></li>
+      <li><a href="#projects" class="mobile-menu__link">Projects</a></li>
+      <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__container">
+      <div class="hero__greeting reveal">
+        <span class="hero__wave">👋</span>
+        <span>Hello, my name is</span>
+      </div>
+      <h1 class="hero__name reveal reveal--delay-1">
+        Kunal Vala<span class="hero__dot">.</span>
+      </h1>
+      <h2 class="hero__title reveal reveal--delay-2">
+        I am a <span class="hero__highlight" id="typingText"></span><span class="hero__cursor">|</span>
+      </h2>
+      <p class="hero__description reveal reveal--delay-3">
+        Computer Engineering student (Class of 2027) passionate about building modern web applications.
+        Part-time gamer, full-time coder.
+      </p>
+      <div class="hero__cta reveal reveal--delay-4">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+      </div>
+      <div class="hero__socials reveal reveal--delay-4">
+        <a href="https://github.com/Kunal-Vala" target="_blank" rel="noopener" class="hero__social" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/kunal-vala-65776233b" target="_blank" rel="noopener" class="hero__social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://x.com/Kunal__Vala" target="_blank" rel="noopener" class="hero__social" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://instagram.com/kunalvala_" target="_blank" rel="noopener" class="hero__social" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="about" id="about">
+    <div class="section__container">
+      <h2 class="section__heading reveal">
+        <span class="section__number">01.</span> About Me
+      </h2>
+      <div class="about__content">
+        <div class="about__text reveal">
+          <p>
+            Hey there! I'm <strong>Kunal Vala</strong>, a Computer Engineering student graduating in 2027.
+            I'm passionate about building things for the web — from real-time chat applications to
+            full-stack inventory systems.
+          </p>
+          <p>
+            I believe in <em>"learning by doing"</em> and have built 49+ projects and counting, contributing
+            600+ commits in the past year. My journey started with The Odin Project, and since then I've been
+            diving deep into full-stack JavaScript development.
+          </p>
+          <p>
+            When I'm not coding, you'll find me gaming or exploring new technologies.
+            I love how all this tech was built from just elements.
+          </p>
+        </div>
+        <div class="about__timeline reveal reveal--delay-1">
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__year">2025</span>
+                <p>Started The Odin Project. Built foundations in HTML, CSS, JavaScript.</p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__year">Mid 2025</span>
+                <p>Dove into React, building games, shopping carts, and interactive UIs.</p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__year">Late 2025</span>
+                <p>Full-stack Node.js — Express APIs, PostgreSQL, MongoDB, authentication systems.</p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__year">2026</span>
+                <p>Built Chit-Chat — a complete real-time messaging platform with TypeScript.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="skills" id="skills">
+    <div class="section__container">
+      <h2 class="section__heading reveal">
+        <span class="section__number">02.</span> Skills & Tools
+      </h2>
+      <div class="skills__grid">
+        <div class="skill-category reveal">
+          <h3 class="skill-category__title">Frontend</h3>
+          <div class="skill-category__items">
+            <div class="skill-pill">React</div>
+            <div class="skill-pill">TypeScript</div>
+            <div class="skill-pill">JavaScript</div>
+            <div class="skill-pill">HTML5</div>
+            <div class="skill-pill">CSS3</div>
+            <div class="skill-pill">Tailwind CSS</div>
+            <div class="skill-pill">Vite</div>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal--delay-1">
+          <h3 class="skill-category__title">Backend</h3>
+          <div class="skill-category__items">
+            <div class="skill-pill">Node.js</div>
+            <div class="skill-pill">Express.js</div>
+            <div class="skill-pill">REST APIs</div>
+            <div class="skill-pill">Socket.IO</div>
+            <div class="skill-pill">EJS</div>
+            <div class="skill-pill">JWT Auth</div>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal--delay-2">
+          <h3 class="skill-category__title">Databases</h3>
+          <div class="skill-category__items">
+            <div class="skill-pill">MongoDB</div>
+            <div class="skill-pill">PostgreSQL</div>
+            <div class="skill-pill">Neon</div>
+            <div class="skill-pill">Cloudinary</div>
+          </div>
+        </div>
+        <div class="skill-category reveal reveal--delay-3">
+          <h3 class="skill-category__title">Tools & DevOps</h3>
+          <div class="skill-category__items">
+            <div class="skill-pill">Git & GitHub</div>
+            <div class="skill-pill">Webpack</div>
+            <div class="skill-pill">Vercel</div>
+            <div class="skill-pill">Render</div>
+            <div class="skill-pill">Linux</div>
+            <div class="skill-pill">Jest</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section class="projects" id="projects">
+    <div class="section__container">
+      <h2 class="section__heading reveal">
+        <span class="section__number">03.</span> Featured Projects
+      </h2>
+      <div class="projects__grid">
+
+        <!-- Project 1: Chit-Chat -->
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <div class="project-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Kunal-Vala/chit-chat" target="_blank" rel="noopener" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://chit-chat-1iab.vercel.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Chit-Chat</h3>
+          <p class="project-card__description">
+            A full-stack real-time messaging platform with JWT authentication, direct &amp; group chats,
+            media sharing via Cloudinary, online/offline tracking, and WebSocket communication.
+          </p>
+          <div class="project-card__tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Node.js</span>
+            <span>Socket.IO</span>
+            <span>MongoDB</span>
+            <span>Tailwind</span>
+          </div>
+        </article>
+
+        <!-- Project 2: Shopila -->
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <div class="project-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Kunal-Vala/shopping-cart" target="_blank" rel="noopener" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://shopping-cart-hco.pages.dev/" target="_blank" rel="noopener" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Shopila</h3>
+          <p class="project-card__description">
+            A modular React shopping cart application with global state management using useContext and useReducer.
+            Features real-time total calculation, product fetching from FakeStoreAPI, and responsive animations.
+          </p>
+          <div class="project-card__tags">
+            <span>React</span>
+            <span>JavaScript</span>
+            <span>CSS</span>
+            <span>Vite</span>
+            <span>Context API</span>
+          </div>
+        </article>
+
+        <!-- Project 3: Inventory Application -->
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <div class="project-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Kunal-Vala/Inventory-Application" target="_blank" rel="noopener" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://inventory-application-eta.vercel.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Inventory Application</h3>
+          <p class="project-card__description">
+            A full-stack inventory management system with CRUD operations, category management,
+            admin password protection, MVC architecture, and PostgreSQL database integration. Deployed on Vercel with Neon.
+          </p>
+          <div class="project-card__tags">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>PostgreSQL</span>
+            <span>EJS</span>
+            <span>MVC</span>
+          </div>
+        </article>
+
+        <!-- Project 4: Memory Card Game -->
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <div class="project-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M12 8v8m-4-4h8"/></svg>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Kunal-Vala/memory-card-game" target="_blank" rel="noopener" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://1a5121da.memory-card-game-bm2.pages.dev/" target="_blank" rel="noopener" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Memory Card Game</h3>
+          <p class="project-card__description">
+            A fun React memory game — click character cards without repeating! Features animated card grids,
+            score tracking, best score persistence, and character images from the GiantBomb API.
+          </p>
+          <div class="project-card__tags">
+            <span>React</span>
+            <span>JavaScript</span>
+            <span>CSS</span>
+            <span>API Integration</span>
+          </div>
+        </article>
+
+        <!-- Project 5: Members Only -->
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <div class="project-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Kunal-Vala/odin-members-only" target="_blank" rel="noopener" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://odin-members-only-blush.vercel.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Members Only</h3>
+          <p class="project-card__description">
+            An authentication-based web app where only verified members see post authors. Features user registration,
+            Passport.js auth, session management with PostgreSQL, and role-based access control.
+          </p>
+          <div class="project-card__tags">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>Passport.js</span>
+            <span>PostgreSQL</span>
+            <span>EJS</span>
+          </div>
+        </article>
+
+        <!-- Project 6: My Blog -->
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <div class="project-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Kunal-Vala/my-blog" target="_blank" rel="noopener" aria-label="GitHub Repository">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://my-blog-backend-six.vercel.app/" target="_blank" rel="noopener" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">My Blog</h3>
+          <p class="project-card__description">
+            A full-stack blog platform with separate frontend and backend. Built with TypeScript and React
+            on the frontend, Node.js on the backend, featuring a clean reading experience.
+          </p>
+          <div class="project-card__tags">
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Vite</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects__more reveal">
+        <a href="https://github.com/Kunal-Vala?tab=repositories" target="_blank" rel="noopener" class="btn btn--outline">
+          View All 49+ Repos on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="contact" id="contact">
+    <div class="section__container section__container--narrow">
+      <h2 class="section__heading reveal">
+        <span class="section__number">04.</span> Get In Touch
+      </h2>
+      <div class="contact__content reveal">
+        <p class="contact__text">
+          I'm currently looking for new opportunities and my inbox is always open.
+          Whether you have a question, a project idea, or just want to say hi — feel free to reach out!
+        </p>
+        <a href="mailto:kunalvala2005@gmail.com" class="btn btn--primary btn--large">
+          Say Hello
+        </a>
+        <div class="contact__socials">
+          <a href="https://github.com/Kunal-Vala" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/kunal-vala-65776233b" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://x.com/Kunal__Vala" target="_blank" rel="noopener" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://instagram.com/kunalvala_" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__credit">
+        Designed &amp; Built by <strong>Kunal Vala</strong>
+      </p>
+      <p class="footer__stats">
+        <a href="https://github.com/Kunal-Vala" target="_blank" rel="noopener">
+          600+ contributions this year
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
